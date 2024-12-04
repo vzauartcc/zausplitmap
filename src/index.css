@@ -1,0 +1,157 @@
+
+/*
+div {  
+    border:2px solid green;
+} 
+*/
+
+h1, h2, h3 {
+  text-align: center;
+  font-family:"Roboto", Arial, sans-serif;
+
+}
+
+
+
+#master-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#map-container {
+  position: relative;
+  width:50%;
+  padding: 15px;
+}
+
+#map-controls {
+  width:50%;
+  padding: 15px;
+}
+
+#root {
+  top: 0;
+  position:sticky;
+
+}
+
+
+.action {
+  margin: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.map { height: 480px; }
+
+.pos_label {
+text-align: center;
+color: black;
+font-family:"Roboto", Arial, sans-serif;
+font-weight:bold;
+font-size: 20px;
+line-height: 1
+}
+
+.spec-label {
+text-align: center;
+width: max-content;
+color: black;
+font-family:"Roboto", Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > button { /* close position buttons */
+  display: inline-block;
+  border: 3px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  margin: 5px;
+  background-color: grey;
+  text-align: center;
+  font-size: 16px;
+}
+
+#newPositionButton {
+  border: 3px solid #E4002B;
+  background-color: #E4002B;
+  width: 460px;
+}
+
+#newPositionButton:hover{
+  color: #E4002B;
+  background-color: white;
+}
+
+.menu {
+  position: absolute;
+  z-index: 5;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu > li {
+  margin: 0;
+  background-color: white;
+  font-family:"Roboto", Arial, sans-serif;
+}
+
+.menu > li:hover {
+  background-color: grey;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.positions {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.positions > li {
+  display:flex;
+  flex-direction: row; 
+	flex-wrap: wrap; 
+  background-color: white;
+}
+
+
+.positions > li > button { /* position selectors */
+  display: inline-block;
+  border: 3px solid #E4002B;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+  margin: 5px;
+  background-color: #E4002B;
+  text-align: center;
+  font-size: 16px;
+}
+
+.positions > li > button:hover {
+  color: #E4002B;
+  background-color: white;
+}
